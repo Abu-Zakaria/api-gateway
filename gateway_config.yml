@@ -1,0 +1,22 @@
+services:
+  - name: serviceA
+    port: 3000
+    base_url: http://localhost
+    endpoints:
+      get:
+        - /users
+        - /suppliers
+      post:
+        - /users/create
+        - /suppliers/create
+    secretKey: DoomSoundtracksAreAwesome
+
+  - name: serviceB
+    port: 9000
+    base_url: http://localhost
+    endpoints:
+      get:
+        - /settings
+        - /settings/*
+    secretKey: DoomIsAwesome!!!
+
